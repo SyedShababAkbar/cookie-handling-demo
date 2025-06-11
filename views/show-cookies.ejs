@@ -1,0 +1,8 @@
+<%- include("header") %>
+<h2>All Cookies</h2>
+<table border="1">
+  <tr><th>Cookie Name</th><th>Value</th></tr>
+  <% Object.entries(cookies).forEach(([key, val]) => { %>
+    <tr><td><%= key %></td><td><%= val %></td></tr>
+  <% }) %>
+</table>
